@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Old Italic', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #6e6b6b;
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 5px;
+    background: #06204eea;
+
+}
+
+.game-details{
+    color: #b8c6dc;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.play-board {
+    width: 100%;
+    height: 90%;
+    background: rgba(4, 105, 105, 0.781);
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+
+.play-board .food {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+
+}
+
+.play-board .head {
+    background: #02ff17;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.score {
+    font-weight: 800;
+    color: rgb(224, 41, 41);
+}
+
+.high-score{
+    font-weight: 800;
+    color: rgb(226, 41, 41);
+}
+
+.game-over {
+    font-family: 'Press Start 2P', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    font-weight: 900;
+    color: rgb(0, 255, 0);
+    text-align: center;
+} 
+
+span {
+    color: rgb(0, 255, 0);
+    text-align: center;
+    font-size: 3rem;
+}
